@@ -41,6 +41,7 @@ public class Server {
 							}
 							p.addLast(new ObjectEncoder(), //
 									new DeviceDecoder(), // 基于ReplayingDecoder类的解码器
+									new DeviceToProtocolInfoDecoder(),//基于MessageToMessageDecoder类的解码器
 									new DeviceChannelHandlers()//
 							);
 						}

@@ -8,9 +8,13 @@ public class DeviceChannelHandlers extends ChannelInboundHandlerAdapter {
 
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-		// TODO Auto-generated method stub
-		logger.info((String) msg);
-		super.channelRead(ctx, msg);
+		if (msg instanceof DeviceProtocolInfo) {
+			DeviceProtocolInfo info = (DeviceProtocolInfo) msg;
+			//
+			logger.info(info.getClass().getName());
+		} else {
+
+		}
 	}
 
 	@Override
