@@ -1,2 +1,2 @@
 # NettyReplayingDecoder
-Netty Decoder ReplayingDecoder Demo.
+Netty Demo.
